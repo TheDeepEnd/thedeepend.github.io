@@ -16,5 +16,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  TheDeepEnd
 
+# List files we want to exclude from our build
+exclude: [LICENSE, package.json, README.md, node_modules]
+
 # Build settings
 markdown: kramdown
