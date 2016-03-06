@@ -2,7 +2,9 @@
  * Site header
  */
 .site-header {
-
+	.navbar-brand {
+		color: $white;
+	}
 }
 
 .site-title {
@@ -10,7 +12,13 @@
 }
 
 .site-nav {
-
+	background-color: transparent;
+	border: none;
+	.navbar-collapse {
+		li > a {
+		color: $white;
+		}
+	}
 }
 
 
@@ -33,7 +41,15 @@
  * Page content
  */
 .page-content {
-
+	section {
+	margin: 50px;
+	}
+	.jumbotron {
+		background-color: transparent;
+		p {
+			margin: 20px 0 40px 0;
+		}
+	}
 }
 
 .page-heading {
@@ -53,5 +69,5 @@
 }
 
 .post-content {
-
+	margin-top: 20px;
 }
