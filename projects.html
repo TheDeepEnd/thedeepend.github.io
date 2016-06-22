@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /projects/
+title: Projects
+---
+
+<div class="row">
+  {% for post in site.categories['projects'] %}
+  <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="project-box">
+      <div class="box box-header">
+        <h4>{{ post.title }}</h4>
+      </div>
+      <div class="box box-content">
+        <p>{{ post.blurb }}</p>
+        <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+      </div>
+      <div class="box box-button">
+          <a href="{{ post.url }}" class="btn btn-primary">View Project</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
