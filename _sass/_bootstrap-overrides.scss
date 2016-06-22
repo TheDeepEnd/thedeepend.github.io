@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////////////////////
+// This file contains any type of Bootstrap 3 styling overrides //
+//////////////////////////////////////////////////////////////////
+
+// Overriding .btn-primary
+$btn-bg-color: #59AAFA;
+
+.btn-primary {
+	padding: 7px 10px;
+	border: none;
+	@include Linx ($btn-bg-color, $white, $white, $white, $white);
+}

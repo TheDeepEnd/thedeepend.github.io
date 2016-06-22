@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////////////////
+// This file contains mixins for our overall styling            //
+//////////////////////////////////////////////////////////////////
+
+// Handle different states for our links
+@mixin Linx ($bg-color, $link, $visit, $hover, $active) {
+  background-color: $bg-color;
+  color: $link;
+  &:visited {
+    background-color: $bg-color;
+    color: $visit;
+  }
+  &:hover {
+    background-color: lighten( $bg-color, 10% );
+    color: $link;   
+  }
+  &:active {
+    background-color: darken( $bg-color, 10% );
+    color: $active;
+  }
+}

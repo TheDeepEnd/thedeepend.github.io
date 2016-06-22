@@ -1,0 +1,92 @@
+/**
+ * Site header
+ */
+.site-header {
+	.navbar-brand {
+		color: $text-color;
+	}
+}
+
+.site-title {
+
+}
+
+.site-nav {
+	background-color: transparent;
+	border: none;
+	.navbar-collapse {
+		li > a {
+		color: $text-color;
+		}
+	}
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+
+}
+
+.footer-heading {
+
+}
+
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+	.project-box {
+		margin: 10px 0;
+		background-color: white;
+		padding: 10px 15px;
+		border-radius: 3px;
+		box-shadow: 0px 0px 5px $box-shadow-color;
+		.box {
+			margin: 15px 0;
+		}
+		.box-content {
+			p {
+				margin-bottom: 10px;
+				color: $secondary-text-color;
+			}
+			.date {
+				font-weight: 700;
+			}
+		}
+	}
+	section {
+	margin: 50px;
+	}
+	.jumbotron {
+		background-color: transparent;
+		p {
+			margin: 20px 0 40px 0;
+		}
+	}
+}
+
+.page-heading {
+
+}
+
+
+/**
+ * Posts
+ */
+.post-header {
+
+}
+
+.post-title {
+
+}
+
+.post-content {
+	margin-top: 20px;
+}
