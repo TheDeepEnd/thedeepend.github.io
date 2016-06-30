@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /resources/
+title: Resources
+published: true
+---
+
+<div class="row">
+  {{ site.data.resources }}
+  <br>
+  <br>
+  <ul>
+    {% for language in site.data.languages.languages %}
+      {% for resource in site.data.resources.resources %}
+        <li>
+          <ul>
+            <li>{{ resource[language.name][0] }}</li>
+            <li>{{ resource[language.name]["url"] }}</li>
+            <li>{{ resource[language.name]["blurb"] }}</li>
+          </ul>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
