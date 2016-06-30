@@ -2,11 +2,32 @@
 // This file contains any type of Bootstrap 3 styling overrides //
 //////////////////////////////////////////////////////////////////
 
-// Overriding .btn-primary
-$btn-bg-color: #59AAFA;
-
-.btn-primary {
+// Overriding .btn-primary and .btn-secondary
+$btn-bg-color: #18C0A7;
+.btn {
+	margin-bottom: 20px;
 	padding: 7px 10px;
+}
+.btn-primary {
 	border: none;
 	@include Linx ($btn-bg-color, $white, $white, $white, $white);
+}
+.btn-secondary {
+	border: 1px solid $btn-bg-color;
+	color: $btn-bg-color;
+}
+
+// Overriding .jumbotron
+.jumbotron {
+	h1 {
+		font-size: 32px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+
+// Overriding .navbar
+.navbar {
+	margin-bottom: 0px;
 }
