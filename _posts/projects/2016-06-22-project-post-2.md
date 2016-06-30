@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project Post 2"
+title:  "Paragraphs"
 blurb: "This is just a sample project post used as a placeholder."
 date:   2016-06-22 09:10:39 -1000
 categories:
@@ -10,7 +10,9 @@ tech: # for later use
 - angular
 ---
 
+### Paragraphs
 
+This post demonstrates how paragraphs are responsive and stack up on one another.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae diam magna. Nam sodales pellentesque dolor id venenatis. Sed porta purus eu libero efficitur auctor. Quisque euismod, nibh ut mattis imperdiet, ex eros sagittis libero, eu pellentesque tortor nibh nec ex. Cras sit amet felis blandit, scelerisque lectus in, posuere nisl. Nulla blandit leo non pellentesque commodo. Vivamus scelerisque nulla vitae mattis vestibulum. Pellentesque congue feugiat metus sit amet lobortis. Nam non sapien quis diam feugiat interdum vitae ut magna. Morbi blandit ullamcorper est quis fringilla. Vestibulum eget magna rhoncus, sollicitudin risus sed, eleifend ipsum. Aenean consectetur imperdiet ligula sit amet ultricies.
 
