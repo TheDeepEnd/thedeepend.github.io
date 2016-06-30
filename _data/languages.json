@@ -1,6 +1,6 @@
 {
   "languages" : [
-    { "name" : "html" },
-    { "name" : "ruby" }
+    { "name" : "HTML" },
+    { "name" : "Ruby" }
   ]
 }

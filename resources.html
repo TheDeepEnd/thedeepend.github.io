@@ -5,21 +5,35 @@ title: Resources
 published: true
 ---
 
-<div class="row">
-  {{ site.data.resources }}
-  <br>
-  <br>
-  <ul>
-    {% for language in site.data.languages.languages %}
-      {% for resource in site.data.resources.resources %}
-        <li>
-          <ul>
-            <li>{{ resource[language.name][0] }}</li>
-            <li>{{ resource[language.name]["url"] }}</li>
-            <li>{{ resource[language.name]["blurb"] }}</li>
-          </ul>
+<div class="container">
+  <div class="row">
+    <ul class="nav nav-tabs" role="tabslist">
+      {% for language in site.data.languages.languages %}
+        <li {% if forloop.index == 1 %} class="active" {% endif %}>
+          <a href="#{{ language["name"] }}" role="tab" data-toggle="tab">
+            {{ language["name"] }}
+          </a>
         </li>
       {% endfor %}
-    {% endfor %}
-  </ul>
+    </ul>
+
+    <div class="tab-content">
+      {% for language in site.data.languages.languages %}
+        <div role="tab" class="tab-pane {% if forloop.index == 1 %} active {% endif %}" id={{ language["name"] }}>
+          {% for resource in site.data.resources.resources %}
+            {% if language["name"] == resource["category"] %}
+              <div class="project-box">
+                <strong>{{ resource["category"] }}</strong><br>
+                <strong>{{ resource["title"]    }}</strong><br>
+                <a href={{ resource["url"] }} target="_blank">
+                  {{ resource["url"]    }}
+                </a><br>
+                <em>{{ resource["blurb"] }}</em>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
