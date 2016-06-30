@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Sample Challenges Post"
+title:  "Tip Calculator"
+blurb:  "Write an interactive tip calculator in your preferred language."
 date:   2016-06-22 13:10:39 -1000
 categories: challenges
 ---
