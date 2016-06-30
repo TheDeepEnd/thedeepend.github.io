@@ -1,28 +1,67 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="home-page">
-  <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2">
-      <section>
-        <div class="jumbotron text-center">
-          <h1>Welcome to TheDeepEnd</h1>
-          <p>We are student developers from Honolulu who tackle challenges and build projects to answer them. Checkout what we're up to!</p>
-          <div class="col-xs-12 col-md-6">
-            <a class="btn btn-primary" href="https://github.com/TheDeepEnd">Github</a>
+  <!-- Main Hero -->
+  <div class="container hero-section">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <h1 class="block-section-lg">Welcome to TheDeepEnd</h1>
+            <p class="block-section-lg">
+              We are student developers from Honolulu who tackle challenges and
+              build projects to answer them. Checkout what we're up to!
+            </p>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <a class="btn btn-primary btn-block" href="https://github.com/TheDeepEnd">Github</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <a class="btn btn-secondary btn-block" href="#">Join!</a>
+            </div>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <a class="btn btn-secondary" href="#">Join!</a>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-3">
-      <p>Social Media Buttons</p>
+      </div>
     </div>
   </div>
 
+  <!-- How we're doing it section -->
+  <div class="container-fluid no-padding white-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h3 class="text-center">How we're doing it</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="detail-block">
+            <h4 class="block-section block-title">Challenges</h4>
+            <p class="block-section block-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum dolor sit amet.
+            </p>
+            <a class="btn btn-primary" href="{{ "/challenges/" | prepend: site.baseurl }}">View Challenges</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="detail-block">
+            <h4 class="block-section block-title">Resources</h4>
+            <p class="block-section block-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum dolor sit amet.
+            </p>
+            <a class="btn btn-primary" href="{{ "/resources/" | prepend: site.baseurl }}">View Resources</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="detail-block">
+            <h4 class="block-section block-title">Collaboration</h4>
+            <p class="block-section block-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum dolor sit amet.
+            </p>
+            <a class="btn btn-primary" href="{{ "/projects/" | prepend: site.baseurl }}">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div><!-- .home-page -->
