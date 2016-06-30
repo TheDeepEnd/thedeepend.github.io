@@ -23,7 +23,6 @@ published: true
           {% for resource in site.data.resources.resources %}
             {% if language["name"] == resource["category"] %}
               <div class="project-box">
-                <strong>{{ resource["category"] }}</strong><br>
                 <strong>{{ resource["title"]    }}</strong><br>
                 <a href={{ resource["url"] }} target="_blank">
                   {{ resource["url"]    }}
