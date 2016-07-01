@@ -7,19 +7,13 @@ published: true
 ---
 <div class="container">
   <div class="row">
+    <h3 class="text-center project-box">Select from the themes to find a challenge to solve!</h3>
     {% for theme in site.data.challenge_themes.themes %}
     <div class="col-xs-12 col-sm-6 col-md-3">
       <div class="project-box text-center">
         <div class="box box-header">
           <h4>{{ theme["title"] }}</h4>
         </div>
-        <!-- <div class="box box-content">
-          <p>{{ post.blurb }}</p>
-          <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-        </div>
-        <div class="box box-button">
-            <a href="{{ post.url }}" class="btn btn-primary btn-block">View Challenge</a>
-        </div> -->
       </div>
     </div>
     {% endfor %}
