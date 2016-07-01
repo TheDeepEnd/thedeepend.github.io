@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project-post
 title:  "Lists"
 blurb: "This is just a sample project post used as a placeholder."
 date:   2016-06-22 09:10:39 -1000
