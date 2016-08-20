@@ -1,17 +1,13 @@
 {
-  "resources" : [
+  "html" : [
     {
       "category" : "HTML",
          "title" : "HTML Dog",
            "url" : "http://www.htmldog.com/",
          "blurb" : "A free collection of tutorials on the building blocks of the web."
     },
-    {
-      "category" : "Ruby",
-         "title" : "Ruby Monk",
-           "url" : "https://rubymonk.com/",
-         "blurb" : "Free, interactive Ruby tutorials for all skill levels."
-    },
+  ],
+  "ruby" : [
     {
       "category" : "Ruby",
          "title" : "Poignant Guide to Ruby",

@@ -9,15 +9,21 @@ $btn-bg-color: #EDE32B;
 	margin-bottom: 20px;
 	padding: 7px 10px;
 }
+
 .btn-primary {
-  border-radius: 2px;
+  border-radius: $global-radius;
 	background-color: $theme-color;
 	color: $white;
 	border: none;
 }
 .btn-secondary {
-	// border: 1px solid $btn-bg-color;
-	// color: $btn-bg-color;
+	border-radius: $global-radius;
+  background-color: $theme-color-contrast;
+	color: $text-color;
+}
+
+.btn-secondary:hover {
+  background-color: lighten($theme-color-contrast, 15%);
 }
 
 // Overriding .jumbotron
@@ -33,4 +39,20 @@ $btn-bg-color: #EDE32B;
 // Overriding .navbar
 .navbar {
 	margin-bottom: 0px;
+}
+
+.navbar-nav > li > a {
+  color: $white;
+}
+
+.nav-tabs {
+  li > a {
+    color: $theme-color-dark;
+  }
+}
+
+.tab-content {
+  .active {
+    color: $text-color;
+  }
 }

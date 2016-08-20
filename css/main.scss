@@ -7,37 +7,38 @@
 
 // Our variables
 // Colors generated based on DeepEnd logo
-$theme-color: #2C379E;
-$theme-color-dark: #131742;
-$theme-color-light: #516BFF;
-$theme-color-contrast: #EDE32B;
-$theme-color-text: #212121;
+$theme-color          : #2C379E;
+$theme-color-dark     : #131742;
+$theme-color-light    : #516BFF;
+$theme-color-contrast : #EDE32B;
+$theme-color-text     : #212121;
 
-$base-font-family: 'Open Sans', sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$heavy-font-weight: 500;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family     : 'Open Sans', sans-serif;
+$base-font-size       : 16px;
+$base-font-weight     : 400;
+$heavy-font-weight    : 500;
+$small-font-size      : $base-font-size * 0.875;
+$base-line-height     : 1.5;
 
-$heading-font-size: 32px;
+$heading-font-size    : 32px;
 
-$spacing-unit:     30px;
+$global-radius        : 2px;
+$spacing-unit         : 30px;
 
-$text-color:       #212121;
-$secondary-text-color: #727272;
-$sub-text-color: #9F9F9F;
+$text-color           : #212121;
+$secondary-text-color : #727272;
+$sub-text-color       : #9F9F9F;
 
-$background-color: #131744;
-$brand-color:      #2a7ae2;
+$background-color     : #131744;
+$brand-color          : #2a7ae2;
 
-$box-shadow-color: #ECF1F6;
+$box-shadow-color     : #ECF1F6;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color           : #828282;
+$grey-color-light     : lighten($grey-color, 40%);
+$grey-color-dark      :  darken($grey-color, 25%);
 
-$white: #fff;
+$white                : #fff;
 
 
 // Use media queries like this:

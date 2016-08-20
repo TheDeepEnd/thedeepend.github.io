@@ -6,34 +6,35 @@ page-order: 4
 published: true
 ---
 
-<div class="container">
+<div class="container panel">
   <div class="row">
-    <ul class="nav nav-tabs" role="tabslist">
-      {% for language in site.data.languages.languages %}
-        <li {% if forloop.index == 1 %} class="active" {% endif %}>
-          <a href="#{{ language["name"] }}" role="tab" data-toggle="tab">
-            {{ language["name"] }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="panel-content">
+      <ul class="nav nav-tabs" role="tabslist">
+        {% for resource in site.data.resources %}
+          <li {% if forloop.index == 1 %} class="active" {% endif %}>
+            <a href="#{{ resource[0] }}" role="tab" data-toggle="tab">
+              {{ resource[0] | upcase }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
-    <div class="tab-content">
-      {% for language in site.data.languages.languages %}
-        <div role="tab" class="tab-pane {% if forloop.index == 1 %} active {% endif %}" id={{ language["name"] }}>
-          {% for resource in site.data.resources.resources %}
-            {% if language["name"] == resource["category"] %}
-              <div class="project-box">
-                <strong>{{ resource["title"]    }}</strong><br>
-                <a href={{ resource["url"] }} target="_blank">
-                  {{ resource["url"]    }}
+      <div class="tab-content">
+        {% for resource in site.data.resources %}
+          <div role="tab" class="tab-pane {% if forloop.index == 1 %} active {% endif %}" id={{ resource[0] }}>
+            {% for link in resource[1] %}
+              <div class="tab-pane-component">
+                <strong>{{ link["title"]    }}</strong><br>
+                <a href={{ link["url"] }} target="_blank">
+                  {{ link["url"]    }}
                 </a><br>
-                <em>{{ resource["blurb"] }}</em>
+                <em>{{ link["blurb"] }}</em>
               </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endfor %}
+              <hr>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

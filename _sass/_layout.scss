@@ -25,17 +25,19 @@
 	}
 }
 
-
-
-/**
- * Site footer
- */
-.site-footer {
-
+.panel {
+  background-color: $white;
+  color: $text-color;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
-.footer-heading {
+.panel-content {
+  padding: 10px;
+}
 
+.tab-pane-component {
+  padding: 10px;
 }
 
 /**
@@ -86,18 +88,16 @@
 		margin-bottom: 10px;
 		background-color: white;
 		padding: 10px 15px;
-		border-radius: 3px;
+		border-radius: $global-radius;
 		.box {
 			margin: 15px 0;
 		}
 		.box-content {
 			p {
 				margin-bottom: 10px;
-				color: $sub-text-color;
 			}
 			.date {
 				font-weight: 700;
-				color: $sub-text-color;
 			}
 		}
 	}

@@ -41,17 +41,10 @@ h1 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    // &:visited {
-    //     color: darken($brand-color, 15%);
-    // }
-
-    &:hover {
-        color: lighten($theme-color, 10%);
-        text-decoration: underline;
-    }
+  &:hover {
+      color: lighten($theme-color, 10%);
+      text-decoration: underline;
+  }
 }
 
 
