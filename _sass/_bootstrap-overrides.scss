@@ -3,18 +3,21 @@
 //////////////////////////////////////////////////////////////////
 
 // Overriding .btn-primary and .btn-secondary
-$btn-bg-color: #18C0A7;
+$btn-bg-color: #EDE32B;
+
 .btn {
 	margin-bottom: 20px;
 	padding: 7px 10px;
 }
 .btn-primary {
+  border-radius: 2px;
+	background-color: $theme-color;
+	color: $white;
 	border: none;
-	@include Linx ($btn-bg-color, $white, $white, $white, $white);
 }
 .btn-secondary {
-	border: 1px solid $btn-bg-color;
-	color: $btn-bg-color;
+	// border: 1px solid $btn-bg-color;
+	// color: $btn-bg-color;
 }
 
 // Overriding .jumbotron

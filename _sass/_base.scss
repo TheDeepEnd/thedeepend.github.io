@@ -14,11 +14,12 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    background-color: $background-color;
-    color: $text-color;
-    -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  background-color: $background-color;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -31,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $heavy-font-weight;
 }
 h1 {
-  font-size: $heading-font-size;
+  // font-size: $heading-font-size;
 }
 
 
@@ -43,12 +44,12 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+    // &:visited {
+    //     color: darken($brand-color, 15%);
+    // }
 
     &:hover {
-        color: $text-color;
+        color: lighten($theme-color, 10%);
         text-decoration: underline;
     }
 }
@@ -62,7 +63,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 1.15em;
     letter-spacing: -1px;
     font-style: italic;
 
@@ -78,9 +79,9 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 1em;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #eef;
 }
 
