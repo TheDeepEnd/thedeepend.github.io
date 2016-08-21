@@ -25,6 +25,10 @@
 	}
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .panel {
   background-color: $white;
   color: $text-color;
@@ -36,8 +40,18 @@
   padding: 10px;
 }
 
+.panel-title {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .tab-pane-component {
   padding: 10px;
+}
+
+.invert-colors {
+  background-color: $theme-color;
+  color: $white;
 }
 
 /**
