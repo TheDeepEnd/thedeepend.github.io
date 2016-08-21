@@ -13,8 +13,7 @@ published: true
     <div class="col-xs-12 col-md-12">
       <div class="panel invert-colors">
         <div class="panel-title">
-          <h3>{{ theme["title"] }}</h3>
-          <hr>
+          {{ theme["title"] }}
         </div>
         {% for challenge in site.categories["challenges"] %}
           {% if challenge.theme == theme["title"] %}
@@ -31,7 +30,7 @@ published: true
                   </a>
                 </div>
               </div>
-              <br>
+              <hr>
             </div>
           {% endif %}
         {% endfor %}

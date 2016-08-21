@@ -30,9 +30,10 @@
 }
 
 .panel {
+  border-radius: $global-radius;
   background-color: $white;
   color: $text-color;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -41,7 +42,6 @@
 }
 
 .panel-title {
-  margin-bottom: 10px;
   padding: 10px;
 }
 
