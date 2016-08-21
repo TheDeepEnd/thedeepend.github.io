@@ -1,32 +1,32 @@
 ---
 layout: default
-permalink: /challenges/
-title: Challenges
+permalink: /katas/
+title: Katas
 page-order: 3
 published: true
 ---
 <div class="container panel">
   <div class="row">
-    <h3 class="panel text-center">Select from the themes to find a challenge to solve!</h3>
+    <h3 class="panel text-center">Select from the themes to find a kata to try!</h3>
     <hr>
-    {% for theme in site.data.challenge_themes.themes %}
+    {% for theme in site.data.kata_themes.themes %}
     <div class="col-xs-12 col-md-12">
       <div class="panel invert-colors">
         <div class="panel-title">
           {{ theme["title"] }}
         </div>
-        {% for challenge in site.categories["challenges"] %}
-          {% if challenge.theme == theme["title"] %}
+        {% for kata in site.categories["katas"] %}
+          {% if kata.theme == theme["title"] %}
             <div class="panel-content">
               <div class="row">
                 <div class="col-xs-10">
-                  {{ challenge.title }}
+                  {{ kata.title }}
                   <br>
-                  <em>{{ challenge.blurb }}</em>
+                  <em>{{ kata.blurb }}</em>
                 </div>
                 <div class="col-xs-2">
-                  <a class="btn btn-secondary btn-sm" href="{{ challenge.url }}">
-                    View Challenge
+                  <a class="btn btn-secondary btn-sm" href="{{ kata.url }}">
+                    View Kata
                   </a>
                 </div>
               </div>

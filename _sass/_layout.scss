@@ -86,7 +86,8 @@
 		 .detail-block {
 			 margin-bottom: 40px;
 			 .block-text {
-					color: $text-color;
+         min-height: 100px;
+		     color: $text-color;
 			 }
 		 }
 	 }
@@ -143,7 +144,7 @@
 			margin: 20px 0;
 		}
 		.post-meta {
-			color: $sub-text-color;
+			color: $text-color;
 		}
 	 }
 	 .post-content {
